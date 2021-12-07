@@ -1,0 +1,9 @@
+{
+  "name": "dakya",
+  "version": "1.0.0",
+  "description": "A text adventure",
+  "main": "Tale.js",
+  "type": "module",
+  "author": "Elenor Dreibach and Christian Kliebe",
+  "license": "ISC"
+}
