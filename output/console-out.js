@@ -1,60 +1,38 @@
 // import chalk from 'chalk';
 
 function startGame() {
-    // alert("Game Started")
-    interaktion()
-
+    interaction()
 }
 
-let aktuelleAntwort = undefined;
-
-function gibZeileAus(text, textArt) {
-    console.log('text :>> ', text);
-    console.log('textArt :>> ', textArt);
-
-    let preOutput = ">>> ";
-    let output = preOutput;
-    // let content;
-    let content = text;
-
-    let ref = document.getElementById("ref")
-    switch (textArt) {
-
-        case "frage":
-            appendFrage(text)
-            // content = chalk.bold.yellow(text);
-            break;
-
-        case "aussage":
-
-            // content = chalk.italic.white(text);
-            break;
-
-        case "antwort-negativ":
-            appendButton(id, text, "bisque")
-            break;
-
-        case "antwort-positiv":
-            appendButton(id, text, "aquamarine")
-            break;
-
-        default:
-            break;
-    }
+function showInteractionText() {
+    appendText()
 }
 
-function appendFrage(frageContent){
+function appendText() {
     let ref = document.getElementById("ref")
     let label = document.createElement("label")
-    label.textContent = frageContent
-    // label.style.backgroundColor = color
+
+
+    if (!interactionTypeIsQuestion) {
+        let header = document.createElement("h1")
+        header.textContent = actualInteraction.text.header
+        actualInteraction.text.rows.forEach(row => {
+            label.innerHTML += row
+            label.innerHTML += "<br>"
+        });
+        ref.appendChild(header)
+    } else {
+        label.innerHTML += actualInteraction.text
+        label.classList.add("question")
+    }
+
     ref.appendChild(label)
     appendBreak(ref)
 }
 
 function haengePositivenButtonAn(textContent) {
     let button = gibStandardButton(textContent);
-    
+
     button.style.backgroundColor = "bisque"
     button.onclick = handlePositiveClick
 
@@ -64,14 +42,14 @@ function haengePositivenButtonAn(textContent) {
 function haengeNegativenButtonAn(textContent) {
 
     let button = gibStandardButton(textContent);
- 
+
     button.style.backgroundColor = "aquamarine"
     button.onclick = handleNegativeClick
     haengeButtonAn(button)
 
 }
 
-function gibStandardButton(textContent){
+function gibStandardButton(textContent) {
     let button = document.createElement("button")
     button.style.borderStyle = "dotted"
     button.textContent = textContent
@@ -79,22 +57,22 @@ function gibStandardButton(textContent){
     return button
 }
 
-function haengeButtonAn(button){
+function haengeButtonAn(button) {
     let ref = document.getElementById("ref")
     ref.appendChild(button)
 }
 
-function handlePositiveClick(){
+function handlePositiveClick() {
     alert("😀😀")
     console.log("handlePositiveClick");
 }
 
-function handleNegativeClick(){
+function handleNegativeClick() {
     alert("🤔🤔")
     console.log("handleNegativeClick");
 }
 
-function appendBreak(appendee){
+function appendBreak(appendee) {
     let br = document.createElement("br")
     appendee.appendChild(br)
 }

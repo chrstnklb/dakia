@@ -1,71 +1,45 @@
-// import { fragen } from './fragen.js'
-// import { positiveReaktionen, negativeReaktionen } from './reaktionen.js'
-
-// import { antwort, lausch } from './console-in.js'
-// import { gibZeileAus, printEmptyLines } from './console-out.js'
-
-// import { spielerName, spielerAlter} from './spieler.js'
-
 let id = 1
-let aktuelleFrage;
-let fragenTypIsGeschlossen;
+let actualInteraction;
+let interactionTypeIsQuestion;
+let actualAnswer;
 
 console.clear();
 
-function interaktion() {
-    // alert("Game Started2    ")
-
-    ermittleFrage()
-    ermittleFragenTyp()
-    stelleFrage()
-
-    fragenTypIsGeschlossen ? frageGeschlossen() : frageOffen()
-
-    // starteNaechsteInteraktion()
-}
-
-function ermittleFragenTyp() {
-    fragenTypIsGeschlossen = (aktuelleFrage.fragenTyp === "geschlossen")
-}
-
-function frageGeschlossen() {
-    bieteAntworten();
+function interaction() {
+    getActualInteraction()
+    showInteractionText()
+    servePossibleAnswers()
     // lausch();
     // reagiere();
+
+    startNextInteraktion()
+}
+
+function receiveInteractionType() {
+    interactionTypeIsQuestion = (actualInteraction.type === "question")
 }
 
 function frageOffen() {
-    lausch(aktuelleFrage);
+    lausch(actualInteraction);
 }
 
-function ermittleFrage() {
-    aktuelleFrage = fragen.filter(obj => {
+function getActualInteraction() {
+    actualInteraction = interactions.filter(obj => {
         return obj.id === id;
     })[0]
-    console.log('aktuelleFrage :>> ', aktuelleFrage);
+    receiveInteractionType()
+    console.log('actualInteraction :>> ', actualInteraction);
 }
 
-function stelleFrage() {
-    gibZeileAus(aktuelleFrage.frageText, "frage");
+function servePossibleAnswers() {
+    if (interactionTypeIsQuestion) {
+        haengePositivenButtonAn(actualInteraction.answers[0].answerText);
+        haengeNegativenButtonAn(actualInteraction.answers[1].answerText);
+    }
 }
-
-function bieteAntworten(){
-    haengePositivenButtonAn(aktuelleFrage.antworten[0].antwortText);
-    haengeNegativenButtonAn(aktuelleFrage.antworten[1].antwortText);
-}
-
-// function bieteAntworten() {
-
-//     let antworten = aktuelleFrage.antworten;
-
-//     for (let index = 0; index < antworten.length; index++) {
-//         let antwort = antworten[index];
-//         gibZeileAus(antwort.antwortText, antwort.antwortTyp);
-//     }
-// }
 
 function reagiere() {
-    gibZeileAus(antwort == 0 ? waehleReaktion(true) : waehleReaktion(false), "aussage")
+    showInteractionText(antwort == 0 ? waehleReaktion(true) : waehleReaktion(false), "aussage")
 }
 
 function waehleReaktion(positiveReaktion) {
@@ -73,17 +47,12 @@ function waehleReaktion(positiveReaktion) {
     return reaktionen[Math.floor(Math.random() * reaktionen.length)];
 }
 
-function starteNaechsteInteraktion() {
-    id = fragenTypIsGeschlossen ? aktuelleFrage.antworten[antwort].folgendeFrageId : aktuelleFrage.folgendeFrageId
+function startNextInteraktion() {
+    id = actualInteraction.type === "question" ? actualAnswer.nextInteractionId : actualInteraction.nextInteractionId
     if (id === 0) gameOver()
-    interaktion()
+    interaction()
 }
 
 function gameOver() {
-    printEmptyLines(2)
-    console.log("   # # #   G A M E    O V E R   # # #   ");
-    printEmptyLines(2)
-    process.exit(1)
+    alert("   # # #   G A M E    O V E R   # # #   ");
 }
-
-// interaktion()
