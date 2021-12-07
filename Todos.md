@@ -1,7 +1,7 @@
 # Next
 
 <br>
-⬜ Add reaction to click of user
+⏳ Add reaction to click of user
 <br>
 ⬜ Show next interaction (question/story part)
 <br>
