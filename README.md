@@ -21,5 +21,6 @@ Therefore I set the following limitiations to the game, just to limit the effort
 - One html page to show text and enable interactions
 - Release as static page (maybe netlify)
 - Post link to released game here in github
+- The story is written in german only, no translations planned
 
 Further game ideas I do not intend to develop now.
