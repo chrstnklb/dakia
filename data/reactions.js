@@ -1,4 +1,4 @@
-export const positiveReaktionen = [
+const positiveReactions = [
     "Gut!",
     "Nice!",
     "Das freut mich!",
@@ -10,7 +10,7 @@ export const positiveReaktionen = [
     "Ok... warum erzählst du mir das? Egal!"
 ]
 
-export const negativeReaktionen = [
+const negativeReactions = [
     "Nice!",
     "Selber!",
     "Aber aber!",

@@ -1,6 +1,6 @@
 // import { getSpielerName } from "../interaktion/spieler.js";
 
-let interactions =
+let steps =
     [
         {
             id: 1,
@@ -30,13 +30,35 @@ let interactions =
                 {
                     answerTyp: "antwort-positiv",
                     answerText: "Mir geht es gut!",
-                    nextInteractionId: 0
+                    nextInteractionId: 3
                 },
                 {
                     answerTyp: "antwort-negativ",
                     answerText: "Schlecht, also halt dein Maul!",
-                    nextInteractionId: 0
+                    nextInteractionId: 4
                 }
             ],
+        },
+        {
+            id: 3,
+            type: "text",
+            text: {
+                header: "Die Legende von Dakya.",
+                rows: [
+                    "Alles Gut",
+                ]
+            },
+            nextInteractionId: 0
+        },
+        {
+            id: 4,
+            type: "text",
+            text: {
+                header: "Die Legende von Dakya.",
+                rows: [
+                    "Alles Schlecht",
+                ]
+            },
+            nextInteractionId: 0
         },
     ];
