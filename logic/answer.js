@@ -8,11 +8,11 @@ function chooseReaktion(isPositive) {
     return reaction[Math.floor(Math.random() * reaction.length)];
 }
 
-function servePossibleAnswers() {
-    if (actualStepIsQuestion) {
-        appendPositiveButton(actualStep.answers[0].answerText);
-        appendNegativeButton(actualStep.answers[1].answerText);
-    }
+function showPossibleAnswers() {
+
+    appendPositiveButton(actualStep.answers[0].answerText);
+    appendNegativeButton(actualStep.answers[1].answerText);
+
     userReacted = false
 }
 

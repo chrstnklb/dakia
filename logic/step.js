@@ -1,6 +1,4 @@
 let actualStep;
-let actualStepIsQuestion;
-let actualStepIsText
 let id = 1
 
 function nextStoryStep() {
@@ -9,37 +7,24 @@ function nextStoryStep() {
     prepareNextStep()
 }
 
-function initActualStep(){
+function initActualStep() {
     actualStep = getActualStep()
-    actualStepIsText = actualStep.type === "text"
-    actualStepIsQuestion = actualStep.type === "question"
 }
 
 function showStepText() {
-
-    if (actualStepIsText) {
-        serveText()
-        id = actualStep.nextInteractionId
-    }
-    else {
-        showQuestion()
-        servePossibleAnswers()
-    }
+    serveText()
+    showQuestion()
+    showPossibleAnswers()
 }
+
 
 function prepareNextStep() {
 
     console.log('id :>> ', id);
-    
+
     if (id === 0) gameOver()
 
-    if (actualStepIsText) {
-        nextStoryStep()
-    }
-    if(userReacted) {
-        nextStoryStep()
-    }
-
+    if (userReacted) nextStoryStep()
 }
 
 function getActualStep() {

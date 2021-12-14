@@ -4,7 +4,6 @@ let steps =
     [
         {
             id: 1,
-            type: "text",
             text: {
                 header: "Die Legende von Dakya.",
                 rows: [
@@ -20,43 +19,42 @@ let steps =
                     "Vor 10.000 Jahren, elf Monaten, sieben Wochen und fünf Tagen kam es zum Duell der Götter."
                 ]
             },
-            nextInteractionId: 2
-        },
-        {
-            id: 2,
-            type: "question",
-            text: "Hallo Elenoria wie geht es dir?",
+            question: "Hallo DARKA wie geht es dir?",
             answers: [
                 {
                     answerTyp: "antwort-positiv",
                     answerText: "Mir geht es gut!",
-                    nextInteractionId: 3
+                    nextInteractionId: 2
                 },
                 {
                     answerTyp: "antwort-negativ",
                     answerText: "Schlecht, also halt dein Maul!",
-                    nextInteractionId: 4
+                    nextInteractionId: 0
                 }
             ],
+
         },
         {
-            id: 3,
-            type: "text",
+            id: 2,
             text: {
+                header: "Die Geschichte ging weiter.",
                 rows: [
-                    "Alles Gut",
+                    "Ja, wirklich"
                 ]
             },
-            nextInteractionId: 0
-        },
-        {
-            id: 4,
-            type: "text",
-            text: {
-                rows: [
-                    "Alles Schlecht",
-                ]
-            },
-            nextInteractionId: 0
+            question: "Möchtest du das Spiel beenden?",
+            answers: [
+                {
+                    answerTyp: "antwort-positiv",
+                    answerText: "Ja, auf jeden Fall.",
+                    nextInteractionId: 0
+                },
+                {
+                    answerTyp: "antwort-negativ",
+                    answerText: "Auch ja.",
+                    nextInteractionId: 0
+                }
+            ],
+
         },
     ];
