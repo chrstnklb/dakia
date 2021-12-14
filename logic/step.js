@@ -35,6 +35,7 @@ function startNextStep() {
         id = actualStep.nextInteractionId
         nextStoryStep()
     }
+
 }
 
 function getActualStep() {
