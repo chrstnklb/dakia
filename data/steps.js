@@ -43,7 +43,6 @@ let steps =
             id: 3,
             type: "text",
             text: {
-                header: "Die Legende von Dakya.",
                 rows: [
                     "Alles Gut",
                 ]
@@ -54,7 +53,6 @@ let steps =
             id: 4,
             type: "text",
             text: {
-                header: "Die Legende von Dakya.",
                 rows: [
                     "Alles Schlecht",
                 ]

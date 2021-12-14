@@ -6,7 +6,7 @@ let id = 1
 function nextStoryStep() {
     initActualStep()
     showStepText()
-    startNextStep()
+    prepareNextStep()
 }
 
 function initActualStep(){
@@ -17,22 +17,26 @@ function initActualStep(){
 
 function showStepText() {
 
-    if (actualStepIsQuestion) {
+    if (actualStepIsText) {
+        serveText()
+        id = actualStep.nextInteractionId
+    }
+    else {
         showQuestion()
         servePossibleAnswers()
     }
-    else
-        serveText()
 }
 
-function startNextStep() {
+function prepareNextStep() {
 
     console.log('id :>> ', id);
     
     if (id === 0) gameOver()
 
     if (actualStepIsText) {
-        id = actualStep.nextInteractionId
+        nextStoryStep()
+    }
+    if(userReacted) {
         nextStoryStep()
     }
 

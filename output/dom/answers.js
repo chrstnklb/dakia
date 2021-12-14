@@ -1,9 +1,3 @@
-// Contains DOM manipulations but only if there is no functional logic in it
-
-function getRef(){
-    return document.getElementById("ref");
-}
-
 function appendPositiveButton(textContent) {
     let button = getStandardButton(textContent);
 
@@ -34,25 +28,4 @@ function getStandardButton(textContent) {
 
 function appendButton(button) {
     getRef().appendChild(button)
-}
-
-function appendBreak(appendee) {
-    let br = document.createElement("br")
-    appendee.appendChild(br)
-}
-
-function showReactionText(actualNarratorReaction) {
-    let label = document.createElement("label")
-
-    // label.innerHTML += "<br>"
-    label.innerHTML += "<br>"
-    label.innerHTML += actualNarratorReaction
-    // label.innerHTML += "<br>"
-
-    getRef().appendChild(label)
-    appendBreak(getRef())
-}
-
-function gameOver() {
-    alert("   # # #   G A M E    O V E R   # # #   ");
 }

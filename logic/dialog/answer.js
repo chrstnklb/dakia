@@ -1,5 +1,6 @@
 let actualUserAnswer;
 let actualNarratorReaction;
+let userReacted = false
 
 function chooseReaktion(isPositive) {
     let reaction = isPositive ? positiveReactions : negativeReactions
@@ -12,25 +13,26 @@ function servePossibleAnswers() {
         appendPositiveButton(actualStep.answers[0].answerText);
         appendNegativeButton(actualStep.answers[1].answerText);
     }
+    userReacted = false
 }
 
 function handlePositiveClick() {
     actualUserAnswer = actualStep.answers[0]
     id = actualStep.answers[0].nextInteractionId
-    react(true)
+    narratorReact(true)
 }
 
 function handleNegativeClick() {
     actualUserAnswer = actualStep.answers[1]
     id = actualStep.answers[1].nextInteractionId
-    react(false)
+    narratorReact(false)
 }
 
 
-function react(isPositive) {
+function narratorReact(isPositive) {
+    userReacted = true
     actualNarratorReaction = chooseReaktion(isPositive)
     showReactionText(actualNarratorReaction)
-
-    startNextStep()
+    prepareNextStep()
 }
 
