@@ -32,10 +32,3 @@ function getActualStep() {
         return obj.id === id;
     })[0]
 }
-
-function startNextStepAfterInput() {
-    if (id === 0) gameOver()
-
-    id = actualUserAnswer.nextInteractionId
-    nextStoryStep()
-}

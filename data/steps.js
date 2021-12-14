@@ -7,6 +7,10 @@ let steps =
             text: {
                 header: "Die Legende von Dakya.",
                 rows: [
+                    "Geschrieben von der Autorin Elenor Dreibach",
+                    "Programmiert von Christian Kliebe",
+                    "",
+                    "",
                     "Dakya ist das dunkle Land der Unterwelt.",
                     "Es liegt in Rumänien.",
                     "",
@@ -19,7 +23,7 @@ let steps =
                     "Vor 10.000 Jahren, elf Monaten, sieben Wochen und fünf Tagen kam es zum Duell der Götter."
                 ]
             },
-            question: "Hallo DARKA wie geht es dir?",
+            question: "Hallo, wie geht es dir?",
             answers: [
                 {
                     answerTyp: "antwort-positiv",
