@@ -1,6 +1,13 @@
 let actualStep;
 let actualStepIsQuestion;
 let actualStepIsText
+let id = 1
+
+function nextStoryStep() {
+    initActualStep()
+    showStepText()
+    startNextStep()
+}
 
 function initActualStep(){
     actualStep = getActualStep()
