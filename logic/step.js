@@ -18,10 +18,10 @@ function initActualStep() {
 
 function showStepText() {
     
-    serveHeader()
-    serveText()
-    showQuestion()
-    showPossibleAnswers()
+    serveHeader();
+    serveText();
+    showQuestion();
+    showPossibleAnswers();
 }
 
 
