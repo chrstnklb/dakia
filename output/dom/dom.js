@@ -16,3 +16,11 @@ function gameOver() {
 function removeAllElementsFromRef(){
     getRef().innerHTML = ""
 }
+
+function jumpToHeader(){
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+      });
+}

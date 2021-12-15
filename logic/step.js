@@ -9,6 +9,7 @@ function nextStoryStep() {
     removeAllElementsFromRef();
     initActualStep();
     showStepText();
+    jumpToHeader();
     prepareNextStep();
 }
 
