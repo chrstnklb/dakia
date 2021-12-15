@@ -6,6 +6,7 @@
     background-color: rgb(75, 0, 0);
     color: rgba(255, 255, 255, 0.815);
     font-family: 'Gwendolyn';
+    font-size: 3vh;
 }
 
 html, body {
@@ -19,13 +20,12 @@ h1 {
 
 
 button {
-    margin: 1em;
-    border-radius: 0.5em;
+    margin: 0.1em;
+    border-radius: 0.2em;
     border-color: rgba(255, 255, 255, 0.815);
-    font-size: 2.0vh;
 }
 
 div {   
+    margin: 5%;
     min-height: 100vh;
-    font-size: 2.0vh;
 }
