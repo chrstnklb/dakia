@@ -1,13 +1,20 @@
 * {
-    font-family: 'Gwendolyn', cursive;
-    font-size: x-large;
-    color: rgba(66, 109, 201, 0.815);
+    background-color: rgb(75, 0, 0);
+    color: rgba(255, 255, 255, 0.815);
+    font-family: 'Gwendolyn';
+    font-size: large;
 }
 
 h1{
-    color: black;
+    color: rgb(255, 253, 112);
 }
 
 .question{
-    color: rgb(88, 224, 25);
+    color: rgba(169, 255, 129, 0.849);
+}
+
+button{
+    margin: 1em;
+    border-radius: 0.5em;
+    border-color: rgba(255, 255, 255, 0.815);
 }
