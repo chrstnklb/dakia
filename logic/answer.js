@@ -24,7 +24,6 @@ function handleNegativeClick() {
 
 function handleClick() {
     console.log('actualStepId :>> ', actualStepId);
-    // document.getElementById(actualStepId).scrollIntoView();
     userReacted = true
     prepareNextStep()
 }

@@ -12,3 +12,7 @@ function appendBreak(appendee) {
 function gameOver() {
     alert("   # # #   G A M E    O V E R   # # #   ");
 }
+
+function removeAllElementsFromRef(){
+    getRef().innerHTML = ""
+}

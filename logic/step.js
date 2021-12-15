@@ -1,14 +1,15 @@
 let actualStep;
-let actualStepId = 1
+let actualStepId = 1;
 
 function nextStoryStep() {
-    initActualStep()
-    showStepText()
-    prepareNextStep()
+    removeAllElementsFromRef();
+    initActualStep();
+    showStepText();
+    prepareNextStep();
 }
 
 function initActualStep() {
-    actualStep = getActualStep()
+    actualStep = getActualStep();
 }
 
 function showStepText() {
