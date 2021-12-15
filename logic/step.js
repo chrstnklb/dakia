@@ -1,6 +1,10 @@
 let actualStep;
 let actualStepId = 1;
 
+window.addEventListener('load', function() {
+    nextStoryStep()
+})
+
 function nextStoryStep() {
     removeAllElementsFromRef();
     initActualStep();
