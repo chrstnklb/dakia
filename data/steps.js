@@ -26,12 +26,10 @@ let steps =
             question: "Hallo, wie geht es dir?",
             answers: [
                 {
-                    answerTyp: "antwort-positiv",
                     answerText: "Mir geht es gut!",
                     nextInteractionId: 2
                 },
                 {
-                    answerTyp: "antwort-negativ",
                     answerText: "Schlecht, also halt dein Maul!",
                     nextInteractionId: 0
                 }
@@ -49,12 +47,10 @@ let steps =
             question: "Möchtest du das Spiel beenden?",
             answers: [
                 {
-                    answerTyp: "antwort-positiv",
                     answerText: "Ja, auf jeden Fall.",
                     nextInteractionId: 0
                 },
                 {
-                    answerTyp: "antwort-negativ",
                     answerText: "Auch ja.",
                     nextInteractionId: 0
                 }

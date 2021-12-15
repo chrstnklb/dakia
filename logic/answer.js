@@ -2,12 +2,6 @@ let actualUserAnswer;
 let actualNarratorReaction;
 let userReacted = false
 
-function chooseReaktion(isPositive) {
-    let reaction = isPositive ? positiveReactions : negativeReactions
-    console.log('reaction :>> ', reaction);
-    return reaction[Math.floor(Math.random() * reaction.length)];
-}
-
 function showPossibleAnswers() {
 
     appendPositiveButton(actualStep.answers[0].answerText);
@@ -18,21 +12,19 @@ function showPossibleAnswers() {
 
 function handlePositiveClick() {
     actualUserAnswer = actualStep.answers[0]
-    id = actualStep.answers[0].nextInteractionId
-    narratorReact(true)
+    actualStepId = actualStep.answers[0].nextInteractionId
+    handleClick()
 }
 
 function handleNegativeClick() {
     actualUserAnswer = actualStep.answers[1]
-    id = actualStep.answers[1].nextInteractionId
-    narratorReact(false)
+    actualStepId = actualStep.answers[1].nextInteractionId
+    handleClick()
 }
 
-
-function narratorReact(isPositive) {
+function handleClick() {
+    console.log('actualStepId :>> ', actualStepId);
+    // document.getElementById(actualStepId).scrollIntoView();
     userReacted = true
-    actualNarratorReaction = chooseReaktion(isPositive)
-    showReactionText(actualNarratorReaction)
     prepareNextStep()
 }
-

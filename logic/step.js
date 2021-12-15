@@ -1,5 +1,5 @@
 let actualStep;
-let id = 1
+let actualStepId = 1
 
 function nextStoryStep() {
     initActualStep()
@@ -12,6 +12,8 @@ function initActualStep() {
 }
 
 function showStepText() {
+    
+    serveHeader()
     serveText()
     showQuestion()
     showPossibleAnswers()
@@ -20,15 +22,15 @@ function showStepText() {
 
 function prepareNextStep() {
 
-    console.log('id :>> ', id);
+    console.log('id :>> ', actualStepId);
 
-    if (id === 0) gameOver()
+    if (actualStepId === 0) gameOver()
 
     if (userReacted) nextStoryStep()
 }
 
 function getActualStep() {
     return steps.filter(obj => {
-        return obj.id === id;
+        return obj.id === actualStepId;
     })[0]
 }
