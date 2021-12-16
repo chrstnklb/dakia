@@ -5,8 +5,13 @@
 * {
     background-color: rgb(75, 0, 0);
     color: rgba(255, 255, 255, 0.815);
-    font-family: 'Gwendolyn';
     font-size: 3vh;
+
+    /* font-family: 'Gwendolyn', cursive;
+    font-family: 'Ruge Boogie', cursive;
+    font-family: 'Shadows Into Light', cursive; */
+    /* font-family: 'Shalimar', cursive; */
+    font-family: 'Fuzzy Bubbles', cursive;
 }
 
 html, body {
@@ -25,7 +30,7 @@ button {
     border-color: rgba(255, 255, 255, 0.815);
 }
 
-div {   
+div {
     margin: 5%;
     min-height: 100vh;
 }
