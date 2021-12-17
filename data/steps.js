@@ -98,7 +98,7 @@ let steps =
             answers: [
                 {
                     answerText: "Zum Duell der Götter",
-                    nextInteractionId: 5
+                    nextInteractionId: 7
                 },
                 {
                     answerText: "Dakia's Schwester?",
@@ -110,21 +110,21 @@ let steps =
         {
             id: 5,
             text: {
-                header: "Das Duell der Götter",
+                header: "UNUSED",
                 rows: [
-                    "Das Duell der Götter war nur einmal im Jahr, am 15. Mai.",
-                    "Im Land Dakia war gerade der 15.Mai!",
+                    "UNUSED",
+                    "UNUSED",
                 ]
             },
             question: "",
             answers: [
                 {
-                    answerText: "Auf zum Kampf!",
-                    nextInteractionId: 7
+                    answerText: "UNUSED",
+                    nextInteractionId: 0
                 },
                 {
-                    answerText: "Na dann los!",
-                    nextInteractionId: 7
+                    answerText: "UNUSED",
+                    nextInteractionId: 0
                 }
             ],
 
@@ -143,7 +143,7 @@ let steps =
             answers: [
                 {
                     answerText: "Zum Duell der Götter",
-                    nextInteractionId: 5
+                    nextInteractionId: 7
                 },
                 {
                     answerText: "Zum Verhängnisvollen Tag",
@@ -218,132 +218,6 @@ let steps =
                 },
                 {
                     answerText: "ENDE",
-                    nextInteractionId: 0
-                }
-            ],
-
-        },
-        {
-            id: 99,
-            text: {
-                header: "",
-                rows: [
-                    ""
-                ]
-            },
-            question: "",
-            answers: [
-                {
-                    answerText: "",
-                    nextInteractionId: 0
-                },
-                {
-                    answerText: "",
-                    nextInteractionId: 0
-                }
-            ],
-
-        },
-        {
-            id: 99,
-            text: {
-                header: "",
-                rows: [
-                    ""
-                ]
-            },
-            question: "",
-            answers: [
-                {
-                    answerText: "",
-                    nextInteractionId: 0
-                },
-                {
-                    answerText: "",
-                    nextInteractionId: 0
-                }
-            ],
-
-        },
-        {
-            id: 99,
-            text: {
-                header: "",
-                rows: [
-                    ""
-                ]
-            },
-            question: "",
-            answers: [
-                {
-                    answerText: "",
-                    nextInteractionId: 0
-                },
-                {
-                    answerText: "",
-                    nextInteractionId: 0
-                }
-            ],
-
-        },
-        {
-            id: 99,
-            text: {
-                header: "",
-                rows: [
-                    ""
-                ]
-            },
-            question: "",
-            answers: [
-                {
-                    answerText: "",
-                    nextInteractionId: 0
-                },
-                {
-                    answerText: "",
-                    nextInteractionId: 0
-                }
-            ],
-
-        },
-        {
-            id: 99,
-            text: {
-                header: "",
-                rows: [
-                    ""
-                ]
-            },
-            question: "",
-            answers: [
-                {
-                    answerText: "",
-                    nextInteractionId: 0
-                },
-                {
-                    answerText: "",
-                    nextInteractionId: 0
-                }
-            ],
-
-        },
-        {
-            id: 99,
-            text: {
-                header: "",
-                rows: [
-                    ""
-                ]
-            },
-            question: "",
-            answers: [
-                {
-                    answerText: "",
-                    nextInteractionId: 0
-                },
-                {
-                    answerText: "",
                     nextInteractionId: 0
                 }
             ],
