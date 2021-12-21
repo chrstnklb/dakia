@@ -1,4 +1,16 @@
-# About
+# Try me first
+
+<h1>
+
+**👉🏽 [Link to the game!](https://www.christian.kliebe.com) 🦇**
+
+**👷‍♂️Even though the game ist not completed yet, try it!🏗**
+
+</h1>
+
+<br>
+
+# READ.ME
 ## ___Dakya is a text adventure about a girl in a mystical world.___
 
 <br>
@@ -24,3 +36,7 @@ Therefore I set the following limitiations to the game, just to limit the effort
 - The story is written in german only, no translations planned
 
 Further game ideas I do not intend to develop now.
+
+# Story-Graph
+
+The story-graph.graphml file can be loaded using to tool yEd
