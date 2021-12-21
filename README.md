@@ -2,7 +2,7 @@
 
 <h1>
 
-**👉🏽 [Link to the game!](https://www.christian.kliebe.com) 🦇**
+**👉🏽 [Link to the game!](https://dielegendevondakia.netlify.app/output/) 🦇**
 
 **👷‍♂️Even though the game ist not completed yet, try it!🏗**
 
