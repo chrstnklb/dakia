@@ -145,7 +145,7 @@
 
 "Dakia's Schwester",
 
-"Daiya hatte eine Schwester!",
+"Dakia hatte eine Schwester!",
 "Die beiden Schwestern stritten zu oft miteinander.",
 "Daher kam es schon bald zu einem verhängnisvollen Tag."
 
@@ -171,7 +171,7 @@
 "Der Tag des Duells",
 
 "Das Duell der Götter war nur einmal im Jahr, am 15. Mai.",
-"Im Land Dakia war gerade der 15.Mai!",
+"Im Land Dakya war gerade der 15.Mai!",
 
 "Auf zum Kampf",
 "Zur Heldin von Dakia",
@@ -214,18 +214,21 @@
       ]]></data>
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="122.8563661753297" width="373.32082544608204" x="20.000301562673258" y="1576.9627048584175"/>
+          <y:Geometry height="198.54739000747082" width="479.46226116471667" x="-86.1411341559614" y="1501.2716810262764"/>
           <y:Fill color="#CCFFFF" transparent="false"/>
           <y:BorderStyle color="#000000" raised="false" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="131.1953125" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="390.009765625" x="-8.34447008945898" xml:space="preserve" y="-4.16947316233518">
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="173.59375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="466.1171875" x="6.6725368323583325" xml:space="preserve" y="12.476820003735384">
             #9
 
 "Eda wehrt sich",
 
 "Eda stand wieder auf und warf erneut einen Feuerball auf Dakia.",
 "Dakia wurde getroffen",
-"Eda lachte laut!"
-            <y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
+"Eda lachte laut!",
+"",
+"Von da an verbannte Dakia Eda in die Unterwelt und erschuf das Land Dakya.",
+"Eda versuchte immer wieder die Menschen, Tiere und Pflanzen zu verletzen.",
+"Doch Dakia beschützte sie."<y:LabelModel><y:SmartNodeLabelModel distance="4.0"/></y:LabelModel><y:ModelParameter><y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="0.0" nodeRatioX="0.0" nodeRatioY="0.0" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/></y:ModelParameter></y:NodeLabel>
           <y:Shape type="rectangle"/>
         </y:ShapeNode>
       </data>
@@ -401,7 +404,7 @@
     <edge id="e7" source="n6" target="n7">
       <data key="d10">
         <y:PolyLineEdge>
-          <y:Path sx="-122.31965554693556" sy="102.94858650116353" tx="0.0" ty="-61.42818308766485">
+          <y:Path sx="-122.31965554693556" sy="102.94858650116353" tx="0.0" ty="-99.27369500373534">
             <y:Point x="227.2390746117946" y="1495.9309270085823"/>
             <y:Point x="206.66071428571428" y="1495.9309270085823"/>
           </y:Path>
@@ -459,7 +462,7 @@
     <edge id="e11" source="n7" target="n8">
       <data key="d10">
         <y:PolyLineEdge>
-          <y:Path sx="0.0" sy="61.42818308766485" tx="-165.6555748642358" ty="-23.97682544608236">
+          <y:Path sx="0.0" sy="99.27369500373534" tx="-165.6555748642358" ty="-23.97682544608236">
             <y:Point x="206.66071428571428" y="1722.0461613835823"/>
             <y:Point x="273.5868854532245" y="1722.0461613835823"/>
           </y:Path>
